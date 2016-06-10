@@ -1,5 +1,5 @@
 {
-    "name":        "sica07/webino-debug",
+    "name":        "sica07/webinodebug",
     "description": "Debugging module for Webino™",
     "type":        "library",
     "license":     "BSD-3-Clause",
