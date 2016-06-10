@@ -14,15 +14,16 @@ namespace WebinoDebug;
  */
 return [
     'webino_debug' => [
-        'enabled'      => true,
-        'mode'         => null,     // true = production|false = development|null = autodetect|IP address(es) csv/array
-        'bar'          => false,    // bool = enabled|Toggle nette diagnostics bar
-        'bar_panels'   => [],       // \WebinoDebug\Debugger\Bar\PanelInterface[]|Debugger bar panels
-        'strict'       => true,     // bool = cause immediate death|int = matched against error severity
-        'log'          => '',       // bool = enabled|Path to directory eg. data/logs
-        'email'        => '',       // in production mode notifies the recipient
-        'max_depth'    => 3,        // nested levels of array/object
-        'max_len'      => 150,      // max string display length
-        'template_map' => [],       // merge templates if enabled
+        'enabled'       => true,
+        'mode'          => null,     // true = production|false = development|null = autodetect|IP address(es) csv/array
+        'bar'           => false,    // bool = enabled|Toggle nette diagnostics bar
+        'bar_panels'    => [],       // \WebinoDebug\Debugger\Bar\PanelInterface[]|Debugger bar panels
+        'strict'        => true,     // bool = cause immediate death|int = matched against error severity
+        'log'           => '',       // bool = enabled|Path to directory eg. data/logs
+        'email'         => '',       // in production mode notifies the recipient
+        'max_depth'     => 3,        // nested levels of array/object
+        'max_len'       => 150,      // max string display length
+        'show_location' => false,    // bool = enabled|Show location of the dump call
+        'template_map'  => [],       // merge templates if enabled
     ],
 ];

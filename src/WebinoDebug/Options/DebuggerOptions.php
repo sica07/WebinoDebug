@@ -69,6 +69,11 @@ class DebuggerOptions extends AbstractOptions
     protected $maxLen = 300;
 
     /**
+     * @var bool
+     */
+    protected $showLocation = false;
+
+    /**
      * Is debugger enabled?
      *
      * @return bool
@@ -165,6 +170,14 @@ class DebuggerOptions extends AbstractOptions
     public function getMaxLen()
     {
         return $this->maxLen;
+    }
+
+	/**
+     * @return bool
+     */
+    public function getShowLocation()
+    {
+        return $this->showLocation;
     }
 
     /**
@@ -267,6 +280,18 @@ class DebuggerOptions extends AbstractOptions
     public function setMaxLen($maxLen)
     {
         $this->maxLen = (int) $maxLen;
+        return $this;
+    }
+
+    /**
+     * Show location of dump
+     *
+     * @param bool $showLocation
+     * @return self
+     */
+    public function setShowLocation($showLocation)
+    {
+        $this->showLocation = (bool) $showLocation;
         return $this;
     }
 }

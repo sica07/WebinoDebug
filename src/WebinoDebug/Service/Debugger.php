@@ -55,9 +55,10 @@ class Debugger implements DebuggerInterface
             $_options->getEmail()
         );
 
-        Tracy::$strictMode = $_options->isStrict();
-        Tracy::$maxDepth   = $_options->getMaxDepth();
-        Tracy::$maxLen     = $_options->getMaxLen();
+        Tracy::$strictMode   = $_options->isStrict();
+        Tracy::$maxDepth     = $_options->getMaxDepth();
+        Tracy::$maxLen       = $_options->getMaxLen();
+        Tracy::$showLocation = $_options->getSowLocation();
     }
 
     /**
